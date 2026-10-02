@@ -15,15 +15,23 @@ main {
     background-image: url(img/BD-en-20260928-TRIFECTA-perspective_191aeb39-d622-47d3-a6a7-2e1af0f8325b_large.jpg);
     background-position: center center;
     background-repeat: no-repeat ;
-    background-size: max( 100vw ,1200px);
+    background-size: max( 100vw ,1600px);
     position: relative;
+}
+
+main .box {
+    position: absolute; 
+    top: 0 ;
+    height: 90vh ;
+    width: 100% ;
+    opacity: 0.7 ;
+    background-color: black ;
 }
 
 nav {
     width: 65vw ;
     margin: auto ;
-    /* background-color: red  ; */
-    height : 50px ;
+    height : 100px ;
     display: flex ;
     align-items: center ;
     justify-content: space-between;
@@ -39,24 +47,15 @@ nav button {
     z-index: 5 ;
 }
 
-main .box {
-    position: absolute; 
-    top: 0 ;
-    height: 90vh ;
-    width: 100% ;
-    opacity: 0.7 ;
-    background-color: black ;
-}
 
 .hero {
+    padding: 30px ;
     text-align: center;
     margin: auto;
     font-size: 30px ;
     position: relative;
-    height: 100%;
+    height: calc(100% - 100px) ;
     color: white ;
-    /* background-color: white; */
-    /* z-index: 5 ; */
     display: flex ;
     flex-direction: column;
     justify-content: center ;
@@ -71,21 +70,49 @@ main .box {
 }
 
 .hero> span:nth-of-type(2) {
-    /* line-height: 1.4; */
     font-size: 20px ;
     font-weight: 800 ;
 }
 
 .hero> span:nth-of-type(3) {
-    /* line-height: 1.4; */
     font-size: 16px ;
     font-weight:600 ;
 }
 
 
-.input {
+.email-section {
     display: flex ;
-    width: 459px ;
     justify-content: center ;
     align-items: center;
+    gap: 8px ;
+}
+
+.input {
+    background-color: rgba(23 ,23, 23, .75);
+    font-size: 15px ;
+    color: white ;
+    font-weight: 700 ;
+    padding: 14px 250px 14px 15px ;
+    border: none ;
+    border-radius: 5px ;
+    border: 1px solid rgb(90, 78, 78);
+}
+
+.sign-in-btn {
+    background-color: red ;
+    color: white ;
+    font-weight: bold ;
+    padding: 5px 15px ;
+    border: none ;
+    border-radius: 5px ;
+}
+
+.get-started-btn {
+    font-size: 25px ;
+    background: linear-gradient(to right,rgb(154, 38, 177),red) ;
+    color: white ;
+    font-weight: bold ;
+    padding: 5px 15px ;
+    border: none ;
+    border-radius: 5px ;
 }
