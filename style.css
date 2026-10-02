@@ -1,0 +1,57 @@
+* {
+    margin: 0 ;
+    padding: 0 ;
+    box-sizing: border-box ;
+    font-family: "Martel Sans" , sans-serif ;
+}
+
+main {
+    height: 80vh ;
+    background-image: url(img/BD-en-20260928-TRIFECTA-perspective_191aeb39-d622-47d3-a6a7-2e1af0f8325b_large.jpg);
+    background-position: center center;
+    background-repeat: no-repeat ;
+    background-size: max( 100vw ,1200px);
+    position: relative;
+}
+
+nav {
+    width: 65vw ;
+    margin: auto ;
+    /* background-color: red  ; */
+    height : 50px ;
+    display: flex ;
+    align-items: center ;
+    justify-content: space-between;
+}
+
+.netflix-logo {
+    z-index: 5;
+    width: 120px;
+}
+
+
+nav button {
+    z-index: 5 ;
+}
+
+main .box {
+    position: absolute; 
+    top: 0 ;
+    height: 80vh ;
+    width: 100% ;
+    opacity: 0.44 ;
+    background-color: black ;
+}
+
+.hero {
+    font-size: 30px ;
+    position: relative;
+    height: 100%;
+    color: white ;
+    /* background-color: white; */
+    /* z-index: 5 ; */
+    display: flex ;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+}
