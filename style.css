@@ -5,8 +5,13 @@
     font-family: "Martel Sans" , sans-serif ;
 }
 
+body {
+    background-color: black ;
+}
+
+
 main {
-    height: 80vh ;
+    height: 90vh ;
     background-image: url(img/BD-en-20260928-TRIFECTA-perspective_191aeb39-d622-47d3-a6a7-2e1af0f8325b_large.jpg);
     background-position: center center;
     background-repeat: no-repeat ;
@@ -37,13 +42,15 @@ nav button {
 main .box {
     position: absolute; 
     top: 0 ;
-    height: 80vh ;
+    height: 90vh ;
     width: 100% ;
-    opacity: 0.44 ;
+    opacity: 0.7 ;
     background-color: black ;
 }
 
 .hero {
+    text-align: center;
+    margin: auto;
     font-size: 30px ;
     position: relative;
     height: 100%;
@@ -52,6 +59,33 @@ main .box {
     /* z-index: 5 ; */
     display: flex ;
     flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+    gap: 20px ;
+}
+
+.hero> :first-child {
+    line-height: 1.4;
+    font-size: 58px ;
+    font-weight: 900 ;
+}
+
+.hero> span:nth-of-type(2) {
+    /* line-height: 1.4; */
+    font-size: 20px ;
+    font-weight: 800 ;
+}
+
+.hero> span:nth-of-type(3) {
+    /* line-height: 1.4; */
+    font-size: 16px ;
+    font-weight:600 ;
+}
+
+
+.input {
+    display: flex ;
+    width: 459px ;
     justify-content: center ;
     align-items: center;
 }
