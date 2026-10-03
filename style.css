@@ -10,7 +10,7 @@ body {
 }
 
 
-main {
+.main {
     height: 90vh ;
     background-image: url(img/BD-en-20260928-TRIFECTA-perspective_191aeb39-d622-47d3-a6a7-2e1af0f8325b_large.jpg);
     background-position: center center;
@@ -19,7 +19,7 @@ main {
     position: relative;
 }
 
-main .box {
+.main .box {
     position: absolute; 
     top: 0 ;
     height: 90vh ;
@@ -29,7 +29,7 @@ main .box {
 }
 
 nav {
-    width: 65vw ;
+    width: 60vw ;
     margin: auto ;
     height : 100px ;
     display: flex ;
@@ -39,7 +39,7 @@ nav {
 
 .netflix-logo {
     z-index: 5;
-    width: 120px;
+    width: 135px;
 }
 
 
@@ -49,6 +49,7 @@ nav button {
 
 
 .hero {
+    width: 40%;
     padding: 30px ;
     text-align: center;
     margin: auto;
@@ -102,9 +103,10 @@ nav button {
     background-color: red ;
     color: white ;
     font-weight: bold ;
-    padding: 5px 15px ;
+    padding: 4.5px 15px ;
     border: none ;
     border-radius: 5px ;
+    cursor: pointer;
 }
 
 .get-started-btn {
@@ -115,4 +117,52 @@ nav button {
     padding: 5px 15px ;
     border: none ;
     border-radius: 5px ;
+    cursor: pointer;
 }
+
+.first {
+    padding: 70px 0 ;
+    width: 60vw ;
+    margin: auto ;
+}
+
+.first> :first-child {
+    color: white ;
+    font-size: 30px ;
+    font-weight: 900 ;
+    padding: 10px 0 10 0 ;
+}
+
+.reasons {
+    display: flex ;
+    flex-wrap: wrap ;
+    gap: 20px ;
+}
+
+.reasons-style {
+    color: white ;
+    background: linear-gradient(rgb(28, 12, 73),rgb(65, 19, 11));
+    border-radius: 20px ;
+    width: 270px  ;
+    height: 320px ;
+    display: flex ;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 30px ;
+    gap: 20px ;
+}
+
+.reasons-style :first-child {
+    font-size: 22px ;
+    font-weight: 900 ;
+}
+
+.reasons-style :nth-child(2) {
+    font-size: 15px ;
+    line-height: 1.2 ;
+    color: rgb(128, 123, 128);
+    font-weight: 700 ;
+}
+
+
